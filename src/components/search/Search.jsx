@@ -9,8 +9,10 @@ const Search = ({getUsers,page}) => {
     const [input, setInput] = useState('');
  
 
-    useEffect(() => {    
-        getUsers(input, page)       
+    useEffect(() => { 
+        if(input){   
+        getUsers(input, page)   
+        }    
     },[page,getUsers,input]); 
 
     
