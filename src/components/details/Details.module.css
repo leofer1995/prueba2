@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    text-decoration: none;
+}
+
+.repos {
+    border: 1px solid black;
+    height: 200px;
+    width: 900px;
+    overflow-y:auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color:  rgba(0,0,0,0.5);
+    color: white;
+}
+
+.infoAdd {
+    margin-left: 10px;
+}
