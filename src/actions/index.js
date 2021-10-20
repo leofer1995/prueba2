@@ -7,7 +7,6 @@ export const getUsers = (text, page) => {
         try{
         const response = await fetch(`https://api.github.com/search/users?authorization_request=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&&q=${text}&&per_page=12&&page=${page}`);
         const data = await response.json();
-        console.log(data,'cucuuuuuuuuu')
         if(data.items){
             return dispatch({
                 type: 'GET_USERS',
