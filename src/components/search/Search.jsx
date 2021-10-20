@@ -10,8 +10,8 @@ const Search = ({getUsers,page}) => {
  
 
     useEffect(() => {    
-        getUsers(input, page)    // eslint-disable-next-line     
-    },[page,getUsers]); 
+        getUsers(input, page)       
+    },[page,getUsers,input]); 
 
     
     const handleChange = ({target}) => { 
