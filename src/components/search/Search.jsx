@@ -28,7 +28,7 @@ const Search = ({getUsers,page}) => {
                 onChange={handleChange}
             />
             <div>
-                <button onClick={()=>getUsers(input, page)}>Search</button>
+                
             </div>
         </div>
     )
