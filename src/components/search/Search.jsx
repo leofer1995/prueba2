@@ -16,8 +16,7 @@ const Search = ({getUsers,page}) => {
     },[page,getUsers,input]); 
 
     
-    const handleChange = ({target}) => { 
-       
+    const handleChange = ({target}) => {        
         setInput(target.value); 
     }
  
@@ -26,6 +25,7 @@ const Search = ({getUsers,page}) => {
             <input 
                 type="text" 
                 onChange={handleChange}
+                placeholder='username'
             />
             <div>
                 
